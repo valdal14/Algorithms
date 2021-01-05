@@ -1,0 +1,14 @@
+.documentation {
+    text-align: left !important;
+}
+
+.code {
+    background-color: #f7f7f8;
+    border: 1px solid #b4b9bd;
+    border-radius: .25rem;
+    color: #0f2b3d;
+    direction: ltr;
+    display: inline-block;
+    padding: 0 .25rem;
+    unicode-bidi: bidi-override;
+}
