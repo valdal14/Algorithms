@@ -9,6 +9,7 @@ import Code from './components/Sections/Code';
 import firstExample from './components/CodeSnippets/1-FirstExample';
 import frequencyCurrentPattern from './components/CodeSnippets/2-FrequencyCounterPattern';
 import anagrams from './components/CodeSnippets/3-Anagrams';
+import multiplePointers from './components/CodeSnippets/4-MultiplePointers';
 
 function App() {
 
@@ -33,6 +34,13 @@ function App() {
       url: 'anagrams',
       codeId: 'c2',
       codeRes: 'cs2'
+    },
+    {
+      id: 3,
+      title: 'Multiple Pointers',
+      url: 'multiplePointers',
+      codeId: 'c3',
+      codeRes: 'cs3'
     }
   ]);
 
@@ -48,6 +56,8 @@ function App() {
         <Code codeId={sections[1].codeId} resId={sections[1].codeRes} sectionUrl={sections[1].url} title={sections[1].title} exampleOne={frequencyCurrentPattern} size={20} />
         <hr />
         <Code codeId={sections[2].codeId} resId={sections[2].codeRes} sectionUrl={sections[2].url} title={sections[2].title} exampleOne={anagrams} size={26} />
+        <hr />
+        <Code codeId={sections[3].codeId} resId={sections[3].codeRes} sectionUrl={sections[3].url} title={sections[3].title} exampleOne={multiplePointers} size={35} />
       </div>
     </div>
   );
