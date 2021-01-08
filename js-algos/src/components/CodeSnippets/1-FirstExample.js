@@ -1,32 +1,93 @@
-const FirstExample = 
-        `/* 
-#include is a preprocessor command which is executed before the code is compiled. 
-It searches for the iostream header file and pastes its contents into the program.
-*/
-#include <iostream>
-#include <string>
-/*
-Namespaces are a way in C++ to group identifiers (names) together. 
-They provide context for identifiers to avoid naming collisions.
-
-The using command adds std::cout to the global scope of the program. 
-This way you can use cout in your code instead of having to write std::cout.
-*/
-using std::cout;
-using std::string;
-
-int main(){
-    // Declaring and initializing an int variable.
-    int a = 9;
+// String.prototype.ignoreCases = (str)=> {
+//     let string = "";
     
-    // Declaring a string variable without initializing right away.
-    string b;
-    
-    // Initializing the string b.
-    b = "Here is a string";
+//     if(str === undefined || str === null) {
+//         return 'Invalid string';
+//     }
 
-    cout << b;
-    return 0;
-}`;
+//     if(str.length > 0 && isNaN(str)) {
+//         for (let i = 0; i < str.length; i++) {
+//             string += str[i].toLowerCase();
+//         }
+//         return string;
+//     } else {
+//         return 'Invalid string';
+//     }
+// }
+
+// function charCounts(string) {
+//     // create a new instance of String
+//     const str = new String();
+//     // validate the string and ignore cases
+//     const newStr = str.ignoreCases(string);
+//     let obj = {};
+
+//     if(newStr !== 'Invalid string'){
+//         for (let i = 0; i < newStr.length; i++) {
+//             if(obj.hasOwnProperty(newStr[i])){
+//                 let value = obj[newStr[i]];
+//                 value += 1;
+//                 obj[newStr[i]] = value;
+//             } else {
+//                 obj[newStr[i]] = 1;
+//             }
+//         }
+
+//         return obj;
+
+//     } else {
+//         return newStr;
+//     }
+// }
+
+// const test = charCounts('A110292eeeDERsd3');
+// console.log(test);
+
+const FirstExample = `String.prototype.ignoreCases = (str)=> {
+    let string = "";
+    
+    if(str === undefined || str === null) {
+        return 'Invalid string';
+    }
+
+    if(str.length > 0 && isNaN(str)) {
+        for (let i = 0; i < str.length; i++) {
+            string += str[i].toLowerCase();
+        }
+        return string;
+    } else {
+        return 'Invalid string';
+    }
+}
+
+function charCounts(string) {
+    // create a new instance of String
+    const str = new String();
+    // validate the string and ignore cases
+    const newStr = str.ignoreCases(string);
+    let obj = {};
+
+    if(newStr !== 'Invalid string'){
+        for (let i = 0; i < newStr.length; i++) {
+            if(obj.hasOwnProperty(newStr[i])){
+                let value = obj[newStr[i]];
+                value += 1;
+                obj[newStr[i]] = value;
+            } else {
+                obj[newStr[i]] = 1;
+            }
+        }
+
+        return obj;
+
+    } else {
+        return newStr;
+    }
+}
+
+const test = charCounts('A110292eeeDERsd3');
+return test;
+
+`;
 
 export default FirstExample;

@@ -12,16 +12,20 @@
 
   a:link {
       color: #659BD3;
+      font-weight: bold;
   }
 
   a:hover {
-      color: #dddddd !important;
+      color:#F0DB4F !important;
+      font-weight: bold;
   }
 
   a:visited {
       color: #659BD3;
+      font-weight: bold;
   }
 
   a:active {
       color: #659BD3;
+      font-weight: bold;
   }
