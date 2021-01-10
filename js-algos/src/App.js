@@ -10,6 +10,10 @@ import firstExample from './components/CodeSnippets/1-FirstExample';
 import frequencyCurrentPattern from './components/CodeSnippets/2-FrequencyCounterPattern';
 import anagrams from './components/CodeSnippets/3-Anagrams';
 import multiplePointers from './components/CodeSnippets/4-MultiplePointers';
+import syntaxParser from './components/CodeSnippets/5-SyntaxParser';
+import nvp from './components/CodeSnippets/6-NVP-Objects';
+import globalEnv from './components/CodeSnippets/7-GlobalEnv';
+import hoisting from './components/CodeSnippets/8-Hoisting';
 
 function App() {
 
@@ -41,9 +45,38 @@ function App() {
       url: 'multiplePointers',
       codeId: 'c3',
       codeRes: 'cs3'
+    },
+    {
+      id: 4,
+      title: 'Syntax Parsers, Execution Contexts, and Lexical Environments',
+      url: 'syntaxParser',
+      codeId: 'c4',
+      codeRes: 'cs4'
+    },
+    {
+      id: 5,
+      title: 'Name/Value Pairs and Objects',
+      url: 'nvpAndObject',
+      codeId: 'c5',
+      codeRes: 'cs5'
+    },
+    {
+      id: 6,
+      title: 'The Global Environment and The Global Object',
+      url: 'globalEnv',
+      codeId: 'c6',
+      codeRes: 'cs6'
+    },
+    {
+      id: 7,
+      title: 'The Execution Context - Creation and Hoisting',
+      url: 'hoisting',
+      codeId: 'c7',
+      codeRes: 'cs7'
     }
   ]);
 
+  
   return (
     <div className="App">
       <Header />
@@ -58,6 +91,15 @@ function App() {
         <Code codeId={sections[2].codeId} resId={sections[2].codeRes} sectionUrl={sections[2].url} title={sections[2].title} exampleOne={anagrams} size={26} />
         <hr />
         <Code codeId={sections[3].codeId} resId={sections[3].codeRes} sectionUrl={sections[3].url} title={sections[3].title} exampleOne={multiplePointers} size={35} />
+        <hr />
+        <Code codeId={sections[4].codeId} resId={sections[4].codeRes} sectionUrl={sections[4].url} title={sections[4].title} exampleOne={syntaxParser} size={50} />
+        <hr />
+        <Code codeId={sections[5].codeId} resId={sections[5].codeRes} sectionUrl={sections[5].url} title={sections[5].title} exampleOne={nvp} size={30} />
+        <hr />
+        <Code codeId={sections[6].codeId} resId={sections[6].codeRes} sectionUrl={sections[6].url} title={sections[6].title} exampleOne={globalEnv} size={50} />
+        <hr />
+        <Code codeId={sections[7].codeId} resId={sections[7].codeRes} sectionUrl={sections[7].url} title={sections[7].title} exampleOne={hoisting} size={80} />
+
       </div>
     </div>
   );
