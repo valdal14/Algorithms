@@ -19,6 +19,7 @@ import functionInvocation from './components/CodeSnippets/10-FunctionInvocation'
 import contextVariables from './components/CodeSnippets/11-ContextVariables';
 import scopeChain from './components/CodeSnippets/12-ScopeChain';
 import es6Scope from './components/CodeSnippets/13-ES6Scope';
+import asyncScope from './components/CodeSnippets/14-AsyncCode';
 
 function App() {
 
@@ -113,9 +114,14 @@ function App() {
       url: 'es6Scope',
       codeId: 'c12',
       codeRes: 'cs12'
+    },
+    {
+      id: 12,
+      title: 'Async Code Scope',
+      url: 'asyncScope',
+      codeId: 'c13',
+      codeRes: 'cs13'
     }
-    
-    
   ]);
 
   
@@ -151,7 +157,9 @@ function App() {
         <Code codeId={sections[11].codeId} resId={sections[11].codeRes} sectionUrl={sections[11].url} title={sections[11].title} exampleOne={scopeChain} size={50} />
         <hr />
         <Code codeId={sections[12].codeId} resId={sections[12].codeRes} sectionUrl={sections[12].url} title={sections[12].title} exampleOne={es6Scope} size={15} />
-        
+        <hr />
+        <Code codeId={sections[13].codeId} resId={sections[13].codeRes} sectionUrl={sections[13].url} title={sections[13].title} exampleOne={asyncScope} size={15} />
+
         
       </div>
     </div>
