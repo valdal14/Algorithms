@@ -14,6 +14,9 @@ import syntaxParser from './components/CodeSnippets/5-SyntaxParser';
 import nvp from './components/CodeSnippets/6-NVP-Objects';
 import globalEnv from './components/CodeSnippets/7-GlobalEnv';
 import hoisting from './components/CodeSnippets/8-Hoisting';
+import creation from './components/CodeSnippets/9-CreationContext';
+import functionInvocation from './components/CodeSnippets/10-FunctionInvocation';
+import contextVariables from './components/CodeSnippets/11-ContextVariables';
 
 function App() {
 
@@ -73,7 +76,29 @@ function App() {
       url: 'hoisting',
       codeId: 'c7',
       codeRes: 'cs7'
+    },
+    {
+      id: 8,
+      title: 'The Execution Context - Code Execution',
+      url: 'creation',
+      codeId: 'c8',
+      codeRes: 'cs8'
+    },
+    {
+      id: 9,
+      title: 'Function Invocation and the Execution Stack',
+      url: 'functionInvocation',
+      codeId: 'c9',
+      codeRes: 'cs9'
+    },
+    {
+      id: 10,
+      title: 'Functions, Context, and Variable Environments',
+      url: 'contextVariables',
+      codeId: 'c10',
+      codeRes: 'cs10'
     }
+    
   ]);
 
   
@@ -98,7 +123,13 @@ function App() {
         <hr />
         <Code codeId={sections[6].codeId} resId={sections[6].codeRes} sectionUrl={sections[6].url} title={sections[6].title} exampleOne={globalEnv} size={50} />
         <hr />
-        <Code codeId={sections[7].codeId} resId={sections[7].codeRes} sectionUrl={sections[7].url} title={sections[7].title} exampleOne={hoisting} size={80} />
+        <Code codeId={sections[7].codeId} resId={sections[7].codeRes} sectionUrl={sections[7].url} title={sections[7].title} exampleOne={hoisting} size={70} />
+        <hr />
+        <Code codeId={sections[8].codeId} resId={sections[8].codeRes} sectionUrl={sections[8].url} title={sections[8].title} exampleOne={creation} size={30} />
+        <hr />
+        <Code codeId={sections[9].codeId} resId={sections[9].codeRes} sectionUrl={sections[9].url} title={sections[9].title} exampleOne={functionInvocation} size={60} />
+        <hr />
+        <Code codeId={sections[10].codeId} resId={sections[10].codeRes} sectionUrl={sections[10].url} title={sections[10].title} exampleOne={contextVariables} size={60} />
 
       </div>
     </div>
