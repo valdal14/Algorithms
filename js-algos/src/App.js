@@ -17,6 +17,8 @@ import hoisting from './components/CodeSnippets/8-Hoisting';
 import creation from './components/CodeSnippets/9-CreationContext';
 import functionInvocation from './components/CodeSnippets/10-FunctionInvocation';
 import contextVariables from './components/CodeSnippets/11-ContextVariables';
+import scopeChain from './components/CodeSnippets/12-ScopeChain';
+import es6Scope from './components/CodeSnippets/13-ES6Scope';
 
 function App() {
 
@@ -97,7 +99,22 @@ function App() {
       url: 'contextVariables',
       codeId: 'c10',
       codeRes: 'cs10'
+    },
+    {
+      id: 11,
+      title: 'The Scope chain',
+      url: 'scopeChain',
+      codeId: 'c11',
+      codeRes: 'cs11'
+    },
+    {
+      id: 12,
+      title: 'Scope, ES6, and let',
+      url: 'es6Scope',
+      codeId: 'c12',
+      codeRes: 'cs12'
     }
+    
     
   ]);
 
@@ -130,7 +147,12 @@ function App() {
         <Code codeId={sections[9].codeId} resId={sections[9].codeRes} sectionUrl={sections[9].url} title={sections[9].title} exampleOne={functionInvocation} size={60} />
         <hr />
         <Code codeId={sections[10].codeId} resId={sections[10].codeRes} sectionUrl={sections[10].url} title={sections[10].title} exampleOne={contextVariables} size={60} />
-
+        <hr />
+        <Code codeId={sections[11].codeId} resId={sections[11].codeRes} sectionUrl={sections[11].url} title={sections[11].title} exampleOne={scopeChain} size={50} />
+        <hr />
+        <Code codeId={sections[12].codeId} resId={sections[12].codeRes} sectionUrl={sections[12].url} title={sections[12].title} exampleOne={es6Scope} size={15} />
+        
+        
       </div>
     </div>
   );
