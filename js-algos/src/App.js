@@ -117,7 +117,7 @@ function App() {
     },
     {
       id: 12,
-      title: 'Async Code Scope',
+      title: 'Asynchronous Callbacks',
       url: 'asyncScope',
       codeId: 'c13',
       codeRes: 'cs13'
